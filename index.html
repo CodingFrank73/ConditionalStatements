@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/sass/main.css">
+</head>
+
+<body>
+    <section>
+        <form action="" onsubmit="return false">
+            <label for="age">Bitte gib Dein Alter ein: </label>
+            <input type="number" name="age" id="age" required min="0" max="110">
+            <button onclick="checkAge()">Alter prüfen</button>
+        </form>
+        <div id="allow"></div>
+
+
+        <h1 style="color: rgb(0, 119, 255)">JavaScript : if else statement</h1>
+        <h3>
+            Hier prüfen wir, ob das Alter größer als 18 ist
+            oder nicht. Shisha rauchen darf man nur, wenn man volljährig ist.
+        </h3>
+        <hr />
+        <form name="form1" action="#">
+            Geben Sie Ihr Alter ein<input type="text" name="text1" id="input" />
+            <input type="button" value="Alter" onclick="greaterThan(document.getElementById('input').value)" />
+        </form>
+        <div id="shisha"></div>
+    </section>
+
+    <section>
+        <form action="" onsubmit="return false">
+            <label for="weatherQ">Wie empfindest Du das heutige Wetter: </label>
+            <input type="number" name="weatherQ" id="weatherQ" required min="0" max="10">
+            <button onclick="weather(document.getElementById('weatherQ').value)">Wetter beurteilen</button>
+        </form>
+
+        <div id="weatherConditions"></div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
